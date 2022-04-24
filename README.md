@@ -24,6 +24,14 @@ npm install veya yarn install
 
 - https://newsapi.org/
 
+- URL
+  const url =
+  "https://newsapi.org/v2/everything?" +
+  "q=Apple&" +
+  "from=2022-04-18&" +
+  "sortBy=popularity&" +
+  "apiKey=e976e06d3d034c2b9bb5a8cdd60a9fe5";
+
 ## `Kullanilacak Araclar`
 
 - `Redux Dev Tools` : Chrome uzerinde calisan ve global state uzerinde yapilan tum degisikliklerin takip edilmesini saglayan tarayici uzantisidir. Indirmek icin [tiklayiniz.](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?utm_source=chrome-ntp-icon)`
