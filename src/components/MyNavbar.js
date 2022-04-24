@@ -11,10 +11,13 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import LockOpenIcon from "@mui/icons-material/LockOpen";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
+import { clearCurrentUser } from "../redux/actions/authActions";
+import { useDispatch, useSelector } from "react-redux";
 
 const MyNavbar = () => {
+  const dispatch=useDispatch()
   const navigate = useNavigate();
-  const currentUser = true;
+  const {currentUser} = useSelector(state=>state.auth);
 
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -30,6 +33,7 @@ const MyNavbar = () => {
   const handleLogout = () => {
     setAnchorEl(null);
     logout();
+    dispatch(clearCurrentUser());
   };
 
   const handleRegister = () => {
