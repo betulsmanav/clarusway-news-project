@@ -45,7 +45,7 @@ const News = () => {
 
   useEffect(() => {
     dispatch(getNews());
-  });
+  },[]);
 
   return (
     <>

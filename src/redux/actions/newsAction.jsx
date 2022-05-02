@@ -6,5 +6,5 @@ export const setNewsList = (news) => ({
 });
 
 export const clearNewsList = () => ({
-    type: CLEAR_NEWS_LIST,
+    type: SET_NEWS_LIST,
 });
