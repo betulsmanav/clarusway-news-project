@@ -50,7 +50,7 @@ const MyNavbar = () => {
             sx={{ flexGrow: 1, cursor: "pointer" }}
             onClick={() => navigate("/")}
           >
-            CLARUSWAY NEWS
+            BETUL NEWS
           </Typography>
 
           {currentUser ? (
