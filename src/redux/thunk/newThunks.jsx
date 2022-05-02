@@ -5,7 +5,7 @@ import axios from "axios";
 const url =
   "https://newsapi.org/v2/everything?" +
   "q=Apple&" +
-  "from=2022-04-18&" +
+  "from=2022-05-02&" +
   "sortBy=popularity&" +
   "apiKey=e976e06d3d034c2b9bb5a8cdd60a9fe5";
 // ?parametre varsa boyle yaz
